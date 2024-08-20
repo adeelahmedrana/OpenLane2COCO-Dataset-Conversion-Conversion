@@ -6,8 +6,9 @@ This project provides tools to convert the OpenLANE dataset, which primarily rep
 
 ## What are OpenLANE and COCO?
 
-- **OpenLANE**: A dataset used for lane detection tasks where lanes are represented by point coordinates.
-- **COCO**: A large-scale object detection, segmentation, and captioning dataset. It is extensively used in the computer vision community.
+- **[OpenLANE](https://github.com/OpenDriveLab/OpenLane)**: A dataset used for lane detection tasks where lanes are represented by point coordinates.
+- **[COCO](https://cocodataset.org/)**: A large-scale object detection, segmentation, and captioning dataset. It is extensively used in the computer vision community.
+
 
 ## Project Functionality
 
@@ -24,11 +25,11 @@ The image above illustrates the process of converting OpenLANE annotations into 
 The repository includes several scripts, each serving specific purposes in the conversion process:
 
 1. **coco_view**: Allows visualization of the COCO dataset annotations, helpful for verifying the conversion process.
-2. **Open2coco**: The main script that initiates the conversion from OpenLANE to COCO format.
+2. **Open2coco**: The main script that initiates the conversion from OpenLANE to COCO format (Not Optimum Results).
 3. **openlane2coco**: A straightforward script for converting single OpenLANE files to COCO segmentation format.
 4. **openlane2cocoMultiFiles**: Handles the conversion of multiple OpenLANE files to COCO format in batch mode.
 5. **openlane2cocoMultiFiles_withOffset**: Extends the multi-file conversion by adding support for offsetting the lane points to create thicker lanes in the COCO format.
-6. **openlane2cocoMultiFiles_withOffset_supportForDifLanes**: An advanced version of the script that supports different lane types with specific offsets for each type.
+6. **openlane2cocoMultiFiles_withOffset_supportForDifLanes**: An advanced version of the script that supports different lane types with specific offsets for each type $(BEST RESULTS)$.
 
 ## Detailed Explanation of `openlane2cocoMultiFiles_withOffset_supportForDifLanes`
 
